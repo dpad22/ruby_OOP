@@ -6,7 +6,9 @@ class Mammal
     end
 
     def display_health
-        puts "Current Health: #{health}"
+        puts "Current Health: #{@health}"
         self
     end
 end
+
+
