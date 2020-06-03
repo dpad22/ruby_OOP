@@ -6,20 +6,12 @@ class MathDojo
     end
 
     def add (*number)
-        if number.class == Array 
-			@sum += number.flatten.reduce(:+)
-		else
-            @sum += number
-        end
+        number.each {|num| @sum += num}
         self
     end
 
     def subtract (*number)
-        if number.class == Array 
-			@sum -= number.flatten.reduce(:+)
-		else
-            @sum -= number
-        end
+        number.each {|num| @sum -= num}
         self
     end
 
